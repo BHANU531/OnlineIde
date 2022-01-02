@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+   {% for item in data %}
+   <center>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+{{ forloop.counter }}
+    {{item.code|linebreaks }}
+     {{item.user_input|linebreaks }}
+    {{item.user_output|linebreaks }}
+    {{item.user|linebreaks }}
+   {{item.submission_time|linebreaks }}</center>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+{% endfor %}
+</body>
+</html>
+</body>
+</html>
